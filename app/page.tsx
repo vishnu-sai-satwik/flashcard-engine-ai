@@ -272,7 +272,7 @@ export default function Home() {
     initial: { opacity: 0, y: 15, scale: 0.99 },
     animate: { opacity: 1, y: 0, scale: 1 },
     exit: { opacity: 0, y: -15, scale: 0.99 },
-    transition: { duration: 0.3, ease: "easeOut" },
+    transition: { duration: 0.3, ease: "easeOut" as const },
   };
 
   const totalCardsToday = allDayLogs.length + (dueCards.length - currentIndex);
